@@ -1,0 +1,41 @@
+/*Instructions
+The length of the sentence (the number of characters).
+The number of words in the sentence (assuming that the words are separated by a single space).
+The number of vowels in the sentence.
+You have to keep in mind that: 
+
+Each character will be treated separately.
+The last character is the point.
+Use three variables as counters.*/
+
+
+
+ALGORITHM sentence
+
+VAR
+    sentence : STRING : ="my name is chaima ferchichi"
+    L : INTEGER= length (sentence);
+    i : INTEGER ;
+    k : STRING = aeuoiy
+    nbr_of_word : INTEGER := 0 ;
+    nbr_of_vowels : INTEGER : =
+BEGIN
+    Read (sentence);
+    FOR i FROM 0 TO l-1 STEP 1  DO
+        IF (sentence [i=" "]) THEN
+            nbr_of_word :=nbr_of_word+1 ;
+        END_IF
+    END_FOR
+
+    FOR i FROM 0 TO l-1 STEP step 1 DO
+        IF (sentence i=k) THEN
+        nbr_of_vowels : =
+
+    END_FOR
+   
+
+
+
+    Write (L);
+    Write (nbr_ofword+1)
+END
