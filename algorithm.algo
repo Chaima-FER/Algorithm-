@@ -13,23 +13,31 @@ Use three variables as counters.*/
 ALGORITHM sentence
 
 VAR
-    sentence : STRING : ="my name is chaima ferchichi"
-    L : INTEGER= length (sentence);
-    i : INTEGER ;
-    k : STRING = aeuoiy
-    nbr_of_word : INTEGER := 0 ;
+    sentence : STRING := "my name is chaima ferchichi."
+    L : INTEGER:= length(sentence);
+    c :  INTEGER:= length(vowels)   
+    i, t : INTEGER ;
+    vowels : STRING := "aeuoiy" ;
+    nbr_of_words : INTEGER := 0 ;
     nbr_of_vowels : INTEGER : =
 BEGIN
     Read (sentence);
     FOR i FROM 0 TO l-1 STEP 1  DO
-        IF (sentence [i=" "]) THEN
-            nbr_of_word :=nbr_of_word+1 ;
+        IF (sentence[i]= " ") THEN
+            nbr_of_words :=nbr_of_words+1 ;
         END_IF
     END_FOR
 
-    FOR i FROM 0 TO l-1 STEP step 1 DO
-        IF (sentence i=k) THEN
-        nbr_of_vowels : =
+    FOR i FROM 0 TO l-1 STEP  1 DO
+    FOR t FROM 0 TO c-1 STEP 1  DO
+IF (sentence[i] =vowels[t]) THEN
+    nbr_of_vowels := nbr_of_vowels+1 ;
+END_IF
+        
+
+        
+        END_FOR
+        
 
     END_FOR
    
@@ -37,5 +45,6 @@ BEGIN
 
 
     Write (L);
-    Write (nbr_ofword+1)
+    Write (nbr_of_words+1)
+    Write (nbr_of_vowels)
 END
